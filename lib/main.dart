@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
       title: "Tiktok Clone",
       home: Home(),
       theme: ThemeData(
-          textTheme: Theme.of(context)
-              .textTheme
-              .apply(bodyColor: Colors.white, displayColor: Colors.white)),
+        textTheme: Theme.of(context)
+            .textTheme
+            .apply(bodyColor: Colors.white, displayColor: Colors.white),
+      ),
     );
   }
 }

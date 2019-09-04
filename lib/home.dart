@@ -6,7 +6,18 @@ import 'widgets/video_description.dart';
 class Home extends StatelessWidget {
   Widget get topSection => Container(
         height: 100.0,
-        color: Colors.yellow[300],
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Text("Following"),
+            Container(width: 15.0),
+            Text(
+              "For you",
+              style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+            )
+          ],
+        ),
       );
 
   Widget get middleSection => Expanded(
